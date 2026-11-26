@@ -44,6 +44,7 @@ public static class InfrastructureDependencyInjection
         services.AddScoped<IBusinessRepo, BusinessRepo>();
         services.AddScoped<IBusinessService, BusinessService>();
 
+        services.AddScoped<IBusinessMemberService, BusinessMemberService>();
         services.AddScoped<IAuthService, AuthService>();
         services.AddScoped<IRoleService, RoleService>();
         services.AddScoped<IUser, UserService>();

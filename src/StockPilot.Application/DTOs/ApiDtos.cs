@@ -498,3 +498,19 @@ public record MyBusinessResponse(
     string YourRole,
     DateTime JoinedAt
 );
+
+public sealed record BusinessMemberRequest(
+    string Email,
+    string Role);
+
+public sealed record UpdateBusinessMemberRoleRequest(
+    string Role);
+
+public sealed record BusinessMemberResponse(
+    Guid MembershipId,
+    Guid UserId,
+    string FullName,
+    string Email,
+    string Role,
+    bool IsActive,
+    DateTime JoinedAt);
